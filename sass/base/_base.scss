@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+//基本設定
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  color: $color-text;
+  font-size: $font-size;
+  font-family: $font-famiry-sans-serif;
+  line-height: 1.5;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  background: #fcc;
+}
+
+a {
+    color: $color-link;
+    text-decoration: underline;
+    transition: color 200ms ease;
+}
+
+body a:hover {
+    color: $color-link-hover;
+    text-decoration: none;
+}

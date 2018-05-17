@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+//ブレイクポイント
+$breakpoints: (
+  'sm': 'screen and (min-width: 400px)',
+  'md': 'screen and (min-width: 768px)',
+  'lg': 'screen and (min-width: 1000px)',
+  'xl': 'screen and (min-width: 1200px)',
+) !default;
+
+$font-size: 16px;
+
+$color-text: #404040;
+$color-link: #ff0000;
+$color-link-hover: #0000ff;
+
+$font-famiry-serif: "Hiragino Mincho ProN", "游明朝", "YuMincho", serif !default;
+$font-famiry-sans-serif: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif !default;
+
+$opacity: 0.6;
+
+$form-border-radius: 3px;
+$form-transition-duration: 0.4s;
+$form-transition-property: border-color, box-shadow, background-color;
+$form-placeholder-color: #767676;
+$form-disabled-cursor: not-allowed;
+$form-disabled-opacity: 0.5;
+$form-disabled-background-color: #ddd;

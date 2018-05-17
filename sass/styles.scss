@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+@import 'base/variable';
+@import 'base/function';
+@import 'base/mixin';
+@import 'base/normalize';
+@import 'base/base';
+
+@import 'layout/layout';
+
+
+html, body {
+    height: 100%;
+}
+
+
+.contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.searchbox {
+    width: 90%;
+    max-width: 800px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,.1);
+    box-sizing: border-box;
+}
+
+.searchbox__inputarea {
+    width: 100%;
+    @include clearfix();
+}
+
+.searchbox__title {
+    margin-top: 0;
+}
+
+.searchbox__input {
+    float: left;
+    width: 70%;
+    margin: 0;
+    input {
+        width: 100%;
+        padding: 8px;
+        font-weight: bold;
+        border-top: 3px solid #faa;
+        border-right: 0 solid;
+        border-bottom: 3px solid #faa;
+        border-left: 3px solid #faa;
+        border-radius: 3px 0 0 3px;
+        box-sizing: border-box;
+    }
+}
+
+.searchbox__submit {
+    float: right;
+    width: 30%;
+    margin: 0;
+    input {
+        width: 100%;
+        padding: 11px;
+        color: #fff;
+        background: #faa;
+        border: none;
+        border-radius: 0 3px 3px 0;
+        box-sizing: border-box;
+    }
+}
+
+.searchbox__checklist {
+    margin: 20px 0;
+    padding: 0;
+    & > li {
+        display: inline-block;
+    }
+}
